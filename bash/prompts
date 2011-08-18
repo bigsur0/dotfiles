@@ -1,0 +1,2 @@
+source "$rvm_path/contrib/ps1_functions"
+ps1_set --prompt =

@@ -1,0 +1,5 @@
+#RVM
+[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
+
+# add git completion
+source /usr/local/etc/bash_completion.d/git-completion.bash
