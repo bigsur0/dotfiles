@@ -1,30 +1,4 @@
-# TO DELETE:
-# alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim"
-# alias vim="mvim"
-# alias vi="vim"
-
-#Affinity
 alias srcbash="source ~/.bash_profile"
-alias sshadd="ssh-add ~/.ssh/affinitylabs_rsa"
-alias sshhal="ssh root@hal"
-alias sshqavm="ssh root@10.4.71.23"
-alias sshqasnap="ssh root@10.4.71.118"
-alias cddev="cd /Developer/working"
-alias cdal="cd /Developer/working/alchemy"
-alias cdual="cd /Developer/utility/alchemy"
-alias cdch="cd /Developer/working/chemistry"
-alias pd="mount_smbfs //rpandey@alfile1.affinitylabs.com/public/hosts $HOME/p"
-alias h='/Volumes/Public/hosts/gethosts.sh'
-alias f='dscacheutil -flushcache'
-alias mysqlreplal="mysql -u repl -h mysql.be.alchemy.affinitylabs.com -pejevPoj6 alchemy_production -P 3306"
-alias mysqlreplfw="mysql -u repl -h mysql.be.fastweb.affinitylabs.com -pejevPoj6 fastweb_production -P 3306"
-alias mysqlreplch="mysql -u repl -h batchrepl.chemistry.affinitylabs.com -pejevPoj6 chemistry_production"
-alias mysqllogs="mysql -u deployment -h mysql.logs.affinitylabs.com -pmyFlerdof3"
-alias mntpub="mkdir /Volumes/Public; mount -t smbfs //alfile1.affinitylabs.com/public /Volumes/Public"
-alias fwlitedb="rake alchemy_dev:db:get_latest DB=fastweb FILENAME=mysql.app12.fastweb_production.sql.00.gz"
-alias allitedb="rake alchemy_dev:db:get_latest DB=alchemy SITE=''"
-alias mite_email="curl -H \"SOAPAction: http://services.monster.com/Seeker/Account/EmailExists\" -H \"Content-Type: text/xml; charset=utf-8\" -d @/Users/rasikpandey/monster_api/envelope.xml https://gateway.monster.com:443/bgwBroker/seekeraccount --verbose"
-alias mite_login="curl -H \"SOAPAction: http://services.monster.com/ILogin/LoginRequest\" -H \"Content-Type: text/xml; charset=utf-8\" -d @/Users/rasikpandey/monster_api/LoginRequest.xml https://gateway.monster.com:443/bgwBroker/sessionlogin --verbose"
 alias newmignums="gdm release | sed 's/.*\(2011[^_]*\)_.*/\1/'"
 
 # Utility
@@ -32,7 +6,6 @@ alias sfsess="echo ~/Library/Safari/LastSession.plist"
 alias ll="ls -al"
 alias rgrep="grep -r"
 alias rg="rgrep"
-alias mysqlserv="/usr/local/Cellar/mysql/5.1.49/share/mysql/mysql.server"
 alias wlslr="ls -lR > ignore/lslR"
 
 # Git
@@ -44,5 +17,29 @@ alias ss="script/server"
 alias sc="script/console"
 
 
-alias goog="open http://www.google.com"
+#Aliases#
+alias df='df -h'
+alias g='grep -i'
+alias h='history|g'
+alias rm='rm -i'
+alias rmf='rm -f'
+alias cp='cp -r'
+alias mv='mv -i'
+alias ls='ls -hBG'
+alias l.='ls -d .*'
+alias top='htop'
+alias ..='cd ..;'
+alias ...='cd ..;cd ..;'
+alias psgrep='ps aux|grep'
+alias k9='kill -9'
+alias fn='find . -name'
 
+alias fcache='dscacheutil -flushcache'
+
+#ruby
+alias gi='gem install'
+alias gic='gi --no-rdoc --no-ri'
+alias b='bundle'
+alias bi='b install --path vendor'
+alias bu='b update'
+alias be='b exec'

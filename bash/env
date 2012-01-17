@@ -1,0 +1,16 @@
+export CLICOLOR=1
+export PATH=~/bin:$SYS_BIN:$PATH
+
+export CDPATH='.:~'
+export EDITOR='vim'
+export INPUTRC=~/.inputrc 
+
+export HISTCONTROL=erasedups
+export HISTSIZE=5000
+shopt -s histappend
+
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+
+export MERGE_TOOL=opendiff
+
+

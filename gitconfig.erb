@@ -1,6 +1,6 @@
 [user]
-  name = <%= @name %>
-  email = <%= @email %>
+  name = <%= @config.gitconfig["name"] %>
+  email = <%= @config.gitconfig["email"] %>
 [core]
 	editor = vi
 [push]

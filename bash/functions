@@ -3,6 +3,10 @@ function sshdep {
    ssh deployment@$1.affinitylabs.com
 }
 
+function sshprod {
+   ssh root@affprodapp$1-vm1.be.monster.com
+}
+
 function rdtp { 
   rake db:test:prepare DB_TYPE=$1
 }
@@ -15,6 +19,10 @@ function sitelitedb {
  rake alchemy_dev:db:get_latest DB=$1
 }
 
+function qasmoke {
+  SERVER_ENV=$1 cucumber -p qa_smoke $2
+}
+
 function gdm {
   git diff $1 $2 --name-status -- db/migrate
 }
@@ -23,6 +31,9 @@ function vgdm {
   vim `git diff $1 $2 --name-status -- db/migrate | sed 's/.*\(db.*$\)/\1/'`
 }
 
+function nl {
+  curl -s http://redmine.affinitylabs.com:8080/wiki/operations-master/Datacenter_Node_List
+}
 
 #Mysql
 function mysqldrop {

@@ -1,2 +1,5 @@
 source "$rvm_path/contrib/ps1_functions"
-ps1_set --prompt =
+ps1_set --prompt "\:cmd\ \=\>"
+
+export MYSQL_PS1="\\d@\\h> "
+

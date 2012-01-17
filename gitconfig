@@ -1,0 +1,34 @@
+[user]
+  name = Rasik Pandey
+  email = rasik_pandey@apple.com
+[core]
+	editor = vim
+[push]
+	default = current
+[color]
+	sh = auto
+	status = auto
+	branch = auto
+	diff = auto
+  ui = auto
+[mergetool]
+  trustExitCode = false
+[branch]
+  autosetuprebase = remote
+  autosetupmerge = true
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  clo = clone
+  co = checkout
+  df = diff
+  dfns = diff --name-status
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-filesco = checkout
+  cp = cherry-pick
+  noffm = merge --no-ff
+[receive]
+	denyDeleteCurrent = warn

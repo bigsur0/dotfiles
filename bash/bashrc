@@ -1,0 +1,6 @@
+. ~/dotfiles/bash/env
+. ~/dotfiles/bash/aliases
+. ~/dotfiles/bash/functions
+
+#RVM
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

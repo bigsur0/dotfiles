@@ -1,9 +1,0 @@
-export EDITOR="/Applications/MacVim.app/Contents/MacOS/Vim"
-export MYSQL_PS1="\\d@\\h> "
-export MERGE_TOOL=/usr/bin/opendiff
-
-export SYS_BIN=/usr/local/bin
-export PATH=~/bin:$SYS_BIN:$PATH
-export CLICOLOR=1
-
-
