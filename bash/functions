@@ -1,12 +1,3 @@
-# Affinity
-function sshdep {
-   ssh deployment@$1.affinitylabs.com
-}
-
-function sshprod {
-   ssh root@affprodapp$1-vm1.be.monster.com
-}
-
 function rdtp { 
   rake db:test:prepare DB_TYPE=$1
 }
@@ -31,10 +22,6 @@ function vgdm {
   vim `git diff $1 $2 --name-status -- db/migrate | sed 's/.*\(db.*$\)/\1/'`
 }
 
-function nl {
-  curl -s http://redmine.affinitylabs.com:8080/wiki/operations-master/Datacenter_Node_List
-}
-
 #Mysql
 function mysqldrop {
   mysqladmin -u root drop $1
@@ -53,19 +40,3 @@ function rlv {
 function vack {
   vim `ack -l "$@"`
 }
-
-#function gsenvs {
-#  for depenv in bepreview bepreview2 bepreview3 bepreview4
-#  do
-#    expect <<EOD
-#    spawn ssh -oStrictHostKeyChecking=no -oCheckHostIP=no deployment@$depenv.affinitylabs.com
-#    expect password
-#    send myFlerdof3\n
-#    send 99\n
-#    send cd /data/rails/alchemy.affinitylabs.com && git status && exit
-#    send s9\n
-#    EOD
-#  done
-#}
-
-

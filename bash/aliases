@@ -43,3 +43,6 @@ alias b='bundle'
 alias bi='b install --path vendor'
 alias bu='b update'
 alias be='b exec'
+
+#wips
+#alias vig="vi `git st -s . | sed 's/M \(.*\)/\1/'`"

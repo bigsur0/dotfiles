@@ -1,4 +1,8 @@
 #RVM
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
-echo "TODO: setup bash completion for git and homebrew"
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+source ~/dotfiles/bash/git-completion.bash
+

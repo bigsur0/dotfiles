@@ -1,2 +1,2 @@
-. ~/bash/bashrc
+. ~/dotfiles/bash/bashrc
 . ~/.inputrc

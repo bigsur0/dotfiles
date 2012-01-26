@@ -1,6 +1,17 @@
-. ~/dotfiles/bash/env
-. ~/dotfiles/bash/aliases
-. ~/dotfiles/bash/functions
+export PATH="~/bin:$PATH"
+cowsay `date`
+
+set -o vi
 
 #RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+source ~/dotfiles/bash/prompts
+source ~/dotfiles/bash/completion
+source ~/dotfiles/bash/postgres
+
+
+source ~/dotfiles/bash/env
+source ~/dotfiles/bash/aliases
+source ~/dotfiles/bash/functions
+

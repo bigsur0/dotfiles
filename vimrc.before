@@ -1,0 +1,11 @@
+let mapleader = ","
+" Remap esc key
+imap <Leader><Leader> <Esc>
+
+" Turn off search hilighting with leader-s
+noremap <Leader>s :nohlsearch<CR>
+
+" CntrlP customizations
+let g:ctrlp_map = '<Leader><Space>'
+
+
