@@ -1,32 +1,37 @@
 [user]
   name = <%= @config.gitconfig["name"] %>
   email = <%= @config.gitconfig["email"] %>
+#  name = r6p
+#  email = r6p@r6p.com
 [core]
-	editor = vi
+	editor = vim
+	excludesfile = ~/.gitignore
 [push]
 	default = current
+[mergetool]
+  trustExitCode = false
+[branch]
+	autosetuprebase = remote
+  autosetupmerge = true
+[receive]
+  denyDeleteCurrent = warn
 [color]
 	sh = auto
 	status = auto
 	branch = auto
 	diff = auto
-        ui = auto
-[mergetool]
-        trustExitCode = false
-[branch]
-	autosetuprebase = remote
-        autosetupmerge = true
+  ui = auto
 [alias]
-      st = status
-      ci = commit
-      br = branch
-      co = checkout
-      df = diff
-      dfns = diff --name-status
-      lg = log -p
-      lol = log --graph --decorate --pretty=oneline --abbrev-commit
-      lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-      ls = ls-filesco = checkout
-      cp = cherry-pick
-[receive]
-	denyDeleteCurrent = warn
+  st = status
+  ci = commit
+  br = branch
+  clo = clone
+  co = checkout
+  df = diff
+  dfns = diff --name-status
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-filesco = checkout
+  cp = cherry-pick
+  noffm = merge --no-ff

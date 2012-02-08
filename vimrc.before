@@ -8,4 +8,7 @@ noremap <Leader>s :nohlsearch<CR>
 " CntrlP customizations
 let g:ctrlp_map = '<Leader><Space>'
 
+noremap <Leader>q ggVG=
+noremap <Leader>qq ggVGgq
+noremap <Leader>p :set paste<CR>
 

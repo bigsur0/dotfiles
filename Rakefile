@@ -13,7 +13,7 @@ task :setup do
 end
 
 task :install_static_files do
-  Dir[ '*rc', 'bash_profile' ].each do |file|
+  Dir[ '*rc', 'bash_profile', 'gitignore' ].each do |file|
     fname = File::basename(file)
     system("cp #{file} ./work/.#{fname}")
     system("ln -fs #{Dir.pwd}/work/.#{fname} ~/.#{fname}")

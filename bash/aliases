@@ -46,3 +46,4 @@ alias be='b exec'
 
 #wips
 #alias vig="vi `git st -s . | sed 's/M \(.*\)/\1/'`"
+alias itags="mkdir ./.ignore; ctags --tag-relative -Rf.ignore/tags --exclude=.git"
