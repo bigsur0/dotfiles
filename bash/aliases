@@ -1,4 +1,6 @@
 alias srcbash="source ~/.bash_profile"
+alias cddot="cd ~/dotfiles"
+alias newdots="_PREV_DIR=`pwd`; cddot; rake; cd $_PREV_DIR"
 alias newmignums="gdm release | sed 's/.*\(2011[^_]*\)_.*/\1/'"
 
 # Utility

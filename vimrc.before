@@ -1,6 +1,6 @@
 let mapleader = ","
 " Remap esc key
-imap <Leader><Leader> <Esc>
+inoremap <Leader><Leader> <Esc>
 
 " Turn off search hilighting with leader-s
 noremap <Leader>s :nohlsearch<CR>
@@ -8,7 +8,14 @@ noremap <Leader>s :nohlsearch<CR>
 " CntrlP customizations
 let g:ctrlp_map = '<Leader><Space>'
 
-noremap <Leader>q ggVG=
-noremap <Leader>qq ggVGgq
+"Indent file
+noremap <Leader>if ggVG=
+"Format file
+noremap <Leader>ff ggVGgq
+"Close buffer
+noremap <Leader>q :bw<CR>
+"Close all buffers and exit
+noremap <Leader>qq :qa<CR>
 noremap <Leader>p :set paste<CR>
-
+noremap <Leader>rs :w!<space>\|<space>!bundle exec rspec %<CR>
+noremap <Leader>w :w<CR>

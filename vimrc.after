@@ -6,3 +6,7 @@ set t_Co=16
 set background=dark
 colorscheme solarized
 
+"After syntastic is loaded
+noremap <Leader>ss :w<space>\|<space>SyntasticCheck<CR>
+noremap <Leader>se :Errors<CR>
+
