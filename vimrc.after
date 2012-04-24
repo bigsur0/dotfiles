@@ -9,4 +9,6 @@ colorscheme solarized
 "After syntastic is loaded
 noremap <Leader>ss :w<space>\|<space>SyntasticCheck<CR>
 noremap <Leader>se :Errors<CR>
+noremap <Leader>c :call NERDComment("n","toggle")<CR>
+noremap <Leader>z v%
 

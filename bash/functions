@@ -1,3 +1,12 @@
+function up {
+  depth=$1+0
+  for ((i=1 ; i <= depth ; i++))
+    do
+     cmd=`which cd` ..
+     ${cmd}
+    done
+}
+
 function rdtp { 
   rake db:test:prepare DB_TYPE=$1
 }

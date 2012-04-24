@@ -1,13 +1,19 @@
 let mapleader = ","
+set cc=120
 " Remap esc key
 inoremap <Leader><Leader> <Esc>
 
 " Turn off search hilighting with leader-s
 noremap <Leader>s :nohlsearch<CR>
+" Relative line number toggle
+noremap <Leader>r :set rnu!<cr>:set rnu?<cr>
+noremap <Leader>nu :set nu!<cr>:set nu?<cr>
 
 " CntrlP customizations
 let g:ctrlp_map = '<Leader><Space>'
-
+" Buffergator customizations
+let g:buffergator_viewport_split_policy = "B"
+"let g:ctrlp_arg_map = "1"
 "Indent file
 noremap <Leader>if ggVG=
 "Format file
@@ -18,4 +24,9 @@ noremap <Leader>q :bw<CR>
 noremap <Leader>qq :qa<CR>
 noremap <Leader>p :set paste<CR>
 noremap <Leader>rs :w!<space>\|<space>!bundle exec rspec %<CR>
+noremap <Leader>rw :w!<space>\|<space>!bundle exec rspec % --tag wip<CR>
 noremap <Leader>w :w<CR>
+noremap <Leader>wa :wa<CR>
+noremap <Leader>pp :w!<space>\|<space>!cat % \| pbcopy<CR><CR>
+noremap <Leader>rcb :e ~/dotfiles/vimrc.before<CR>
+noremap <Leader>rca :e ~/dotfiles/vimrc.after<CR>

@@ -11,3 +11,5 @@
 --type-add=css=.sass,.less
 --type-set=cucumber=.feature
 --ignore-dir=coverage
+--ignore-dir=.ignore
+--ignore-dir=*/spec/dummy/log

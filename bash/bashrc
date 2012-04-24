@@ -1,5 +1,5 @@
 export PATH="~/bin:$PATH"
-cowsay `date`
+#cowsay `date`
 
 set -o vi
 
