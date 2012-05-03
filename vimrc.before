@@ -23,7 +23,7 @@ noremap <Leader>q :bw<CR>
 "Close all buffers and exit
 noremap <Leader>qq :qa<CR>
 noremap <Leader>p :set paste<CR>
-noremap <Leader>rs :w!<space>\|<space>!bundle exec rspec %<CR>
+noremap <Leader>rs :w!<space>\|<space>!bundle exec rspec % --tag ~wip<CR>
 noremap <Leader>rw :w!<space>\|<space>!bundle exec rspec % --tag wip<CR>
 noremap <Leader>w :w<CR>
 noremap <Leader>wa :wa<CR>
