@@ -1,5 +1,9 @@
 let mapleader = ","
 set cc=120
+
+set backupdir=../.ignore/vim/bkup
+set directory=../.ignore/vim/swp
+
 " Remap esc key
 inoremap <Leader><Leader> <Esc>
 
@@ -23,10 +27,27 @@ noremap <Leader>q :bw<CR>
 "Close all buffers and exit
 noremap <Leader>qq :qa<CR>
 noremap <Leader>p :set paste<CR>
+
+"Rspec runners
+noremap <Leader>ra :w!<space>\|<space>!bundle exec rspec %<CR>
 noremap <Leader>rs :w!<space>\|<space>!bundle exec rspec % --tag ~wip<CR>
 noremap <Leader>rw :w!<space>\|<space>!bundle exec rspec % --tag wip<CR>
+
 noremap <Leader>w :w<CR>
 noremap <Leader>wa :wa<CR>
 noremap <Leader>pp :w!<space>\|<space>!cat % \| pbcopy<CR><CR>
 noremap <Leader>rcb :e ~/dotfiles/vimrc.before<CR>
 noremap <Leader>rca :e ~/dotfiles/vimrc.after<CR>
+noremap <Leader>rc :source ~/.vimrc<CR>
+
+"Simplecov
+noremap <Leader>sc :!open coverage/index.html<CR>
+
+"XML
+vmap ,x :!tidy -q -i -xml<CR>
+
+" Run tests TODO: move this to a local overrride
+noremap <Leader>gt :w!<space>\|<space>!runTests.sh %<CR>
+
+:nnoremap <Leader>sr :%s/\<<C-r><C-w>\>/
+

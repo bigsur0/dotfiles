@@ -4,22 +4,24 @@
 #  name = r6p
 #  email = r6p@r6p.com
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
+  editor = vim
+  excludesfile = ~/.gitignore
 [push]
-	default = current
+  default = upstream
 [mergetool]
   trustExitCode = false
 [branch]
-	autosetuprebase = remote
+  autosetuprebase = always
   autosetupmerge = true
 [receive]
   denyDeleteCurrent = warn
+[rerere]
+  enabled = true
 [color]
-	sh = auto
-	status = auto
-	branch = auto
-	diff = auto
+  sh = auto
+  status = auto
+  branch = auto
+  diff = auto
   ui = auto
 [alias]
   st = status
@@ -28,8 +30,10 @@
   clo = clone
   co = checkout
   df = diff
+  dfc = diff --cached
   dfns = diff --name-status
   lg = log -p
+  lgns = log --name-status
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-filesco = checkout
